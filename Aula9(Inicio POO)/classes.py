@@ -43,8 +43,6 @@ class Pessoa():
         elif self.comendo == True:
             print("Eca, não fale de boca cheia!")
         elif self.dormindo == True:
-            print("Caraca, você é sonambulo??")
-            
 
 #desativar
     def pararDeComer(self):
@@ -66,4 +64,4 @@ class Pessoa():
             print("Não ta mais aqui quem falou...")
             self.falando = False
         else:
-            print("QUê? Mas eu estou calado!")
+            print("Quê? Mas eu estou calado!")
