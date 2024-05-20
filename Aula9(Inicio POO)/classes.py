@@ -19,7 +19,7 @@ class Pessoa():
         self.falando = falando
 #ativar
     def comer(self, comida, bebida):
-        if self.dormindo == False and self.falando == False:
+        if self.dormindo == False or self.falando == False:
             self.comendo = True
             print(f"{self.nome} foi comer {comida} e tomar {bebida}")
         elif self.dormindo == True:
@@ -28,7 +28,7 @@ class Pessoa():
             print("Para de falar e depois coma!")
             
     def dormir(self):
-        if self.comendo == False and self.falando == False:
+        if self.comendo == False or self.falando == False:
             self.dormindo = True
             print(f"{self.nome} está no maior ronco")
         elif self.comendo == True:
@@ -37,7 +37,7 @@ class Pessoa():
             print("Você tem que parar de falar para dormir")
 
     def falar(self):
-        if self.comendo == False and self.dormindo == False:
+        if self.comendo == False or self.dormindo == False:
             self.falando = True
             print(f"{self.nome} não gosta muito de falar.")
         elif self.comendo == True:
