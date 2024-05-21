@@ -43,6 +43,7 @@ class Pessoa():
         elif self.comendo == True:
             print("Eca, não fale de boca cheia!")
         elif self.dormindo == True:
+            print("Você é sonambulo?, acorde para falarr")
 
 #desativar
     def pararDeComer(self):
