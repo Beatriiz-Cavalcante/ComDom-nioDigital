@@ -9,6 +9,7 @@ jogadasj2 = [0,0,0]
 placarj1 = 0
 placarj2 = 0 
 for c in range(0,3,1):
+    #recebendo valores
     jogadasj1[c] = int(input(f'Rodada {c+1} do jogador {jogador1}: '))
     if jogadasj1[c] <1 or jogadasj1[c]>3:
         while jogadasj1[c]<1 or jogadasj1[c]>3:
@@ -21,7 +22,7 @@ for c in range(0,3,1):
             print('número inválido! Tente outra vez')
             jogadasj1[c] = int(input(f'Rodada {c+1} do jogador {jogador1}: '))
 
-for c in range(0,3,1):
+    #retornando valores
     print(f"Resultado rodada {c+1}")
     #condições para o jogador 1 ganhar
     if jogadasj1[c] == 1 and jogadasj2[c]==3:
