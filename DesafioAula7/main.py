@@ -1,3 +1,0 @@
-from funcao import estoque
-
-
