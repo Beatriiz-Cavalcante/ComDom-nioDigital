@@ -11,3 +11,10 @@ jogador2 = Jogador(nome2, simbolo2)
 
 partida = JogoDaVelha(jogador1, jogador2)
 partida.estrutura()
+
+while True:
+    partida.jogada()
+    partida.retornaVencedor()
+    # Verifica se houve um vencedor após cada jogada
+    if partida.retornaVencedor():
+        break  # Encerra o loop se houver um vencedor
